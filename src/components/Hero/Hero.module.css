@@ -1,0 +1,69 @@
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;    /* на весь экран */
+    overflow: hidden;
+    background: black;
+}
+
+.hero__video {
+    margin-top: 1.5rem;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero__overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #FBFF4A;
+    text-align: center;
+    padding: 0 1rem;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero__title {
+    position: absolute;
+    text-align: center;
+    font-size: 110px;
+    line-height: 0.71;
+    margin-bottom: 2rem ;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+}
+
+.hero__subtitle {
+
+    display: inline-block;
+    background: #000;
+    margin-top: 28rem;
+    padding : 0.5rem 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFF;
+    border-radius: 0.25rem;
+}
+
+.hero__meet {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
+    font-family: 'Courier New', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    color: #FFFF;
+
+}
+
+

@@ -1,0 +1,57 @@
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FBFF4A;
+    z-index: 10;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+.inner {
+    margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+/* == ЛОГОТИП == */
+.logoText {
+    display: flex;
+    font-size: 25px;
+    line-height: 1;
+}
+.logoLight {
+    font-weight: 400;
+}
+.logoBold {
+    font-weight: 700;
+}
+
+/* == НАВИГАЦИЯ == */
+.nav {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+.nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+
+.cta {
+    margin-left: 2rem;
+
+}

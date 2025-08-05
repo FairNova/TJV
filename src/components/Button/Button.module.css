@@ -1,0 +1,18 @@
+.btn {
+    font-family: 'Courier New', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.primary {
+    background-color: #000;
+    color: #FBFF4A;
+}
+.chat {
+    background-color: #FBFF4A;
+    color: #000;
+
+}
