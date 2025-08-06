@@ -1,0 +1,66 @@
+.speakers {
+    background: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.title {
+    margin-left: 8rem;
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 2rem;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin: 0 0 0 8rem;
+}
+
+.card {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+.photo {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 33px;
+    margin: 0 0 0.5rem;
+    color: #000;
+}
+
+.role {
+    display: inline-block;
+    background-color: #FBFF4A;
+    color: #000;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    padding: 0.25rem 0.5rem;
+}
+
+.grid > .card:nth-child(1) {
+    margin-top: 2rem;
+}
+
+.grid > .card:nth-child(2) {
+    margin-top: -5rem;
+}
+
+.grid > .card:nth-child(3) {
+    margin-top: -2rem;
+}

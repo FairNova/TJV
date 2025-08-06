@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Speakers from "./components/Speakers/Speakers";
 
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <>
         <Header />
           <Hero/>
+          <Speakers/>
       </>
   );
 }
