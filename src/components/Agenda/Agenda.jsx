@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Agenda.module.css';
+import Button from "../Button/Button";
 
 export default function Agenda() {
     return (
@@ -19,13 +20,31 @@ export default function Agenda() {
                     </div>
                 <div className={styles.scheduleBox}>
                     <ul className={styles.scheduleList}>
-                        <li><span className={styles.time}>9am – 10am</span><span className={styles.event}>Meet &amp; Greet</span></li>
-                        <li><span className={styles.time}>10am – 12pm</span><span className={styles.event}>Keynote Speakers</span></li>
-                        <li><span className={styles.time}>12pm – 1pm</span><span className={styles.event}>Lunch Break</span></li>
-                        <li><span className={styles.time}>1pm – 5pm</span><span className={styles.event}>Workshop Sessions</span></li>
-                        <li><span className={styles.time}>7pm – 12am</span><span className={styles.event}>Closing Party</span></li>
+                        <li>
+                            <span className={styles.time}>9am – 10am</span>
+                            <span className={styles.event}>Meet &amp; Greet</span>
+                        </li>
+                        <li>
+                            <span className={styles.time}>10am – 12pm</span>
+                            <span className={styles.event}>Keynote Speakers</span>
+                            <span className={styles.place}>Main Auditorium</span>
+                        </li>
+                        <li>
+                            <span className={styles.time}>12pm – 1pm</span>
+                            <span className={styles.event}>Lunch Break</span>
+                        </li>
+                        <li>
+                            <span className={styles.time}>1pm – 5pm</span>
+                            <span className={styles.event}>Workshop Sessions</span>
+                            <span className={styles.place}>Havana Convention Room</span>
+                        </li>
+                        <li>
+                            <span className={styles.time}>7pm – 12am</span>
+                            <span className={styles.event}>Closing Party</span>
+                            <span className={styles.place}>The Ball Room</span>
+                        </li>
                     </ul>
-                    <button className={styles.ctaButton}>Agenda &amp; Tickets</button>
+                    <Button variant="chat" >Agenda &amp; Tickets</Button>
                 </div>
             </div>
         </section>
