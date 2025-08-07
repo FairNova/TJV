@@ -1,0 +1,47 @@
+
+.heroImageSection {
+    height: 100vh;                   /* ровно один экран */
+    background-attachment: fixed;    /* параллакс */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sponsorsSection {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.card {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo {
+    max-width: 80%;
+    max-height: 400px;
+    object-fit: contain;
+}
