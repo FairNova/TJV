@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Speakers from "./components/Speakers/Speakers";
 import Workshop from "./components/Workshop/Workshop";
+import Agenda from "./components/Agenda/Agenda";
 
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
           <Hero/>
           <Speakers/>
           <Workshop/>
+          <Agenda/>
       </>
   );
 }
