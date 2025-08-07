@@ -1,7 +1,7 @@
 
 .heroImageSection {
-    height: 100vh;                   /* ровно один экран */
-    background-attachment: fixed;    /* параллакс */
+    height: 100vh;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
