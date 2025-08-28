@@ -1,0 +1,89 @@
+.page { background:#fff; color:#111; min-height:100vh; }
+.container_M {
+    max-width:1000px;
+    margin:90px auto 0 auto;
+    padding:40px 24px 80px;
+}
+.container_A {
+    max-width:1000px;
+    margin:0 auto 90px auto;
+    padding:40px 24px 80px;
+}
+
+.pageTitle {
+    font-family: "Barlow" , sans-serif;
+    font-size:40px;
+    font-weight:400;
+    margin-bottom:50px;
+    margin-top:50px;
+}
+
+/* строка билета как на скрине (две колонки) */
+.agendaRow {
+    display:grid;
+    grid-template-columns: 1fr 1fr;  /* слева время, справа инфо */
+    gap:48px;
+    align-items:flex-start;
+    padding:28px 0 22px;
+}
+
+.hr { height:1px; background:rgba(17,17,17,.12); }
+
+.timeRange {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size:20px;
+    letter-spacing:0.06em;
+}
+.duration {
+    margin-top:12px;
+    color:#9CA3AF;
+    font-size:18px;
+}
+
+.eventTitle {
+    font-size:20px;
+    letter-spacing:0.04em;
+}
+.place {
+    margin-top:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#1f2937;
+    font-size:18px;
+}
+
+/* нижняя строка с «Доступно…» и кнопкой «Всі» */
+.moreRow {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    padding:22px 0;
+}
+.moreRight {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:28px;
+}
+.remaining {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size:14px;
+    color:#111;
+    letter-spacing:0.04em;
+}
+
+.btnAll {
+    background:#fff;
+    color:#111;
+    border:2px solid #111;
+    font-family: "Barlow", sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btnAll:active { transform: translateY(1px); }
+
+.leftSpacer { min-height:1px; }

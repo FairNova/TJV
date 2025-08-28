@@ -1,0 +1,69 @@
+.ticketsPage {
+    --brand-yellow: #fffa00;
+    --bg-dark: #000;
+    --text-light: #fff;
+    --text-dim: rgba(255,255,255,0.7);
+    --card-radius: 16px;
+
+    background: var(--bg-dark);
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+/* HERO */
+.tpHero {
+    width: 100%;
+    height: 100%;
+    background:#0a0a0a;
+    color:#fff;
+    padding:120px 24px 80px;
+}
+.tpHeroInner { max-width: 1120px; margin: 0 auto; padding: 56px 24px; text-align: center; }
+.tpHeroTitle { font-size: clamp(40px, 8vw, 88px); font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+.tpHeroSubtitle { margin-top: 12px; font-size: 18px; color: rgba(0,0,0,0.7); }
+
+/* CONTENT */
+.tpSection { max-width: 1120px; margin: 0 auto; padding: 32px 24px 56px; }
+.tpBlock { margin-top: 16px; }
+.tpH2 { font-size: 28px; font-weight: 700; margin: 8px 0 12px; }
+.tpNote { color: var(--text-dim); margin-top: 6px; }
+.tpError { color: #ff8080; margin: 8px 0; }
+
+/* GRID & CARD */
+.tpGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 16px; }
+
+.tpCard {
+    background: #fff;
+    color: #000;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: var(--card-radius);
+    padding: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+.tpCardTop { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.tpCardTitle { font-weight: 700; font-size: 18px; }
+.tpCardMeta { margin-top: 4px; font-size: 13px; color: rgba(0,0,0,0.6); }
+.tpCardPrice { font-weight: 800; }
+.tpCardActions { margin-top: 14px; display: flex; justify-content: space-between; }
+
+/* BUTTONS */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform .08s ease, opacity .12s ease, background .12s ease, color .12s ease, border-color .12s ease;
+}
+.btn:active { transform: translateY(1px); }
+
+.btnPrimary { background: #000; color: #fff; }
+.btnPrimary:hover { opacity: .9; }
+
+.btnOutline { background: #fff; color: #000; border-color: #000; }
+.btnOutline:hover { background: #000; color: #fff; }

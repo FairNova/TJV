@@ -6,7 +6,7 @@ export default function Nav() {
         <nav className={styles.nav}>
             <ul>
                 <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#workshop">Workshop</a></li>
                 <li><a href="#agenda">Agenda</a></li>
             </ul>
         </nav>

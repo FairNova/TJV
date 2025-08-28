@@ -23,7 +23,7 @@ export default function Workshop() {
             </section>
 
 
-            <section className={styles.workshopsSection}>
+            <section id="workshop" className={styles.workshopsSection}>
                 <div className={styles.header}>
                     <h2 className={styles.title}>Workshops<br/> to Blow<br/> Your Mind</h2>
                     <video
