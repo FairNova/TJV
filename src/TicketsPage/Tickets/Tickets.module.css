@@ -1,89 +1,110 @@
+
 .page { background:#fff; color:#111; min-height:100vh; }
-.container_M {
-    max-width:1000px;
-    margin:90px auto 0 auto;
-    padding:40px 24px 80px;
-}
-.container_A {
-    max-width:1000px;
-    margin:0 auto 90px auto;
-    padding:40px 24px 80px;
-}
+.container { max-width:1120px; margin:0 auto; padding:40px 24px 100px; }
 
-.pageTitle {
-    font-family: "Barlow" , sans-serif;
-    font-size:40px;
-    font-weight:400;
-    margin-bottom:50px;
-    margin-top:50px;
-}
+.pageTitle { font-size:40px; font-weight:800; letter-spacing:-0.02em; margin-bottom:8px; }
+.pageTitleA { font-size:32px; font-weight:800; margin:28px 0 8px; }
+.note { color:#6b7280; margin:8px 0 16px; }
+.error { color:#e11d48; margin:8px 0; }
+.hr { height:1px; background:rgba(17,17,17,.12); }
 
-/* строка билета как на скрине (две колонки) */
+.container_A { margin-top:12px; }
+
+
 .agendaRow {
     display:grid;
-    grid-template-columns: 1fr 1fr;  /* слева время, справа инфо */
+    grid-template-columns: 1fr 1fr;
     gap:48px;
     align-items:flex-start;
     padding:28px 0 22px;
 }
-
-.hr { height:1px; background:rgba(17,17,17,.12); }
+.rowMine {  }
 
 .timeRange {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-    font-size:20px;
+    font-size:32px;
     letter-spacing:0.06em;
 }
-.duration {
-    margin-top:12px;
-    color:#9CA3AF;
-    font-size:18px;
-}
+.duration { margin-top:12px; color:#9CA3AF; font-size:18px; }
 
-.eventTitle {
-    font-size:20px;
-    letter-spacing:0.04em;
+.titleLine { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+.eventTitle { font-size:32px; letter-spacing:0.04em; }
+.seatChip {
+    margin-left:10px; font-size:14px; font-weight:700;
+    padding:2px 8px; border-radius:999px; border:1.6px solid #111; background:#fff;
 }
-.place {
-    margin-top:12px;
-    display:flex;
-    align-items:center;
-    gap:10px;
-    color:#1f2937;
-    font-size:18px;
-}
+.place { margin-top:12px; display:flex; align-items:center; gap:10px; color:#1f2937; font-size:18px; }
 
-/* нижняя строка с «Доступно…» и кнопкой «Всі» */
-.moreRow {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    align-items:center;
-    padding:22px 0;
-}
-.moreRight {
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    gap:28px;
-}
-.remaining {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    font-size:14px;
-    color:#111;
-    letter-spacing:0.04em;
-}
 
+.iconBar { display:flex; align-items:center; gap:10px; }
+.iconBtn {
+    width:36px; height:36px; border-radius:8px; border:1.6px solid #111;
+    display:grid; place-items:center; background:#fff; cursor:pointer;
+    transition:transform .08s ease, background .12s ease, opacity .12s ease;
+}
+.iconBtn:hover { background:#f6f6f6; }
+.iconBtn:active { transform: translateY(1px); }
+
+
+.infoColSplit { display:flex; justify-content:space-between; gap:24px; }
+.infoLeft { min-width:0; }
+.buyCol { display:flex; align-items:center; gap:16px; }
+.priceMain { font-size:24px; font-weight:800; }
+.btnBuy {
+    background:#111; color:#fff; border:2px solid #111;
+    padding:10px 18px; border-radius:10px; font-weight:800; cursor:pointer;
+    transition:transform .08s ease, opacity .12s ease;
+}
+.btnBuy:hover { opacity:.9; }
+.btnBuy:active { transform: translateY(1px); }
+
+
+.moreRow { display:grid; grid-template-columns: 1fr 1fr; align-items:center; padding:22px 0; }
+.moreRight { display:flex; justify-content:flex-end; align-items:center; gap:28px; }
+.remaining { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size:18px; }
 .btnAll {
-    background:#fff;
-    color:#111;
-    border:2px solid #111;
-    font-family: "Barlow", sans-serif;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    font-size: 14px;
-    text-transform: uppercase;
+    background:#fff; color:#111; border:2px solid #111;
+    padding:14px 26px; border-radius:6px; font-weight:800; cursor:pointer;
+    transition:transform .08s ease;
 }
 .btnAll:active { transform: translateY(1px); }
-
 .leftSpacer { min-height:1px; }
+
+
+.modalOverlay { position:fixed; inset:0; background:rgba(0,0,0,.5); display:flex; align-items:center; justify-content:center; padding:20px; z-index:50; }
+.modal {
+    background:#fff; color:#111; width:min(960px, 100%);
+    border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.2);
+    padding:20px 20px 16px; position:relative;
+}
+.modalClose { position:absolute; top:8px; right:10px; background:transparent; border:0; font-size:28px; line-height:1; cursor:pointer; color:#111; }
+.modalHead { padding:4px 4px 12px; }
+.modalTitle { font-size:22px; font-weight:800; }
+.modalSub { margin-top:6px; color:#4b5563; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+
+.stage {
+    margin:10px auto 16px; width:60%; min-width:320px; text-align:center;
+    background:#9CC0E5; border:2px solid #3D5B7A; color:#111;
+    padding:12px 8px; border-radius:12px; font-weight:700;
+}
+
+.board {
+    display:grid;
+    grid-template-columns: 40px repeat(12, 28px);
+    justify-content:center;
+    gap:10px;
+    padding:8px 0 12px;
+}
+.corner { width:40px; height:28px; }
+.colLabel { text-align:center; font-size:12px; color:#6b7280; line-height:28px; }
+.rowLabel { text-align:center; font-size:12px; color:#6b7280; line-height:28px; }
+.seatRow { display:grid; grid-template-columns: repeat(12, 28px); gap:10px; grid-column: 2 / -1; }
+
+.seat { width:28px; height:28px; border-radius:50%; border:2px solid #1110; cursor:pointer; transition:transform .08s ease, box-shadow .12s ease, opacity .12s ease; }
+.seatAvailable { background:#FFFA00; border-color:#111; }
+.seatSelected  { background:#111; border-color:#111; box-shadow:0 0 0 3px #111 inset; }
+.seatUnavailable { background:#47A3FF; cursor:not-allowed; opacity:.7; }
+
+.totalRow { margin-top:10px; padding-top:12px; border-top:1px solid rgba(17,17,17,.12); display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.totalLeft { color:#4b5563; }
+.totalRight { display:flex; align-items:center; gap:16px; }
