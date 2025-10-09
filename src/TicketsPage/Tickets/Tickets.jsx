@@ -74,7 +74,7 @@ function SeatPickerModal({
                 if (!alive) return;
                 setMap({ rows: data.rows, cols: data.cols, statusById });
             } catch {
-                // fallback: 10x12 с частью занятых
+
                 const rows = 10, cols = 12;
                 const statusById = {};
                 for (let r = 0; r < rows; r++) {
@@ -350,7 +350,7 @@ export default function TicketsPage() {
                 ))}
 
 
-                <div className={s.container_A}>
+                <div className={s.container_A} id="all-tickets">
                     <h2 className={s.pageTitleA}>All tickets</h2>
 
                     {items.map((t) => (
