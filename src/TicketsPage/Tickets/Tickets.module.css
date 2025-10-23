@@ -2,15 +2,54 @@
 .page { background:#fff; color:#111; min-height:100vh; }
 .container { max-width:1120px; margin:0 auto; padding:40px 24px 100px; }
 
-.pageTitle { font-size:40px; font-weight:800; letter-spacing:-0.02em; margin-bottom:8px; }
+.pageTitle { font-size:40px; font-weight:800; letter-spacing:-0.02em; margin-bottom:4rem; margin-top: 4rem; }
 .pageTitleA { font-size:32px; font-weight:800; margin:28px 0 8px; }
 .note { color:#6b7280; margin:8px 0 16px; }
 .error { color:#e11d48; margin:8px 0; }
 .hr { height:1px; background:rgba(17,17,17,.12); }
 
-.container_A { margin-top:12px; }
+.container_A {
+    margin-top:6rem;
+    margin-bottom:3rem;
+}
 
-
+.searchBar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 12px 0 8px;
+}
+.searchInput {
+    flex: 1;
+    min-width: 240px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font: inherit;
+}
+.btnSearch,
+.btnClear {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+.btnSearch:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+.searchResultsBox {
+    margin: 8px 0 16px;
+    padding: 8px 12px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+.pageTitleB {
+    font-size: 18px;
+    margin: 4px 0 8px;
+}
 .agendaRow {
     display:grid;
     grid-template-columns: 1fr 1fr;
